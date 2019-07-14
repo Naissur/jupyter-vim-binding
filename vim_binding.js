@@ -68,6 +68,8 @@ define([
     var cm_config = Cell.options_default.cm_config;
     cm_config.keyMap = 'vim';
     cm_config.extraKeys = $.extend(cm_config.extraKeys || {}, {
+      'Ctrl-2': CodeMirror.prototype.leaveInsertMode,
+      'Ctrl-[': CodeMirror.prototype.leaveInsertMode,
       'Esc': CodeMirror.prototype.leaveInsertMode,
       'Shift-Esc': CodeMirror.prototype.leaveNormalMode,
       'Ctrl-C': false,  // To enable clipboard copy
